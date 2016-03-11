@@ -1,0 +1,48 @@
+% importa variabili globali
+\input {../template/config.tex}
+
+
+% definizione variabili locali
+\def\DOCUMENTO{Glossario}
+\def\VERSIONE{1.0.0}
+
+\def\DESCRIZIONE{<Info documento>}
+
+\def\REDATTORE {<Redattore>}
+\def\VERIFICATORE {<Verificatore>}
+\def\RESPONSABILE {<Responsabile>}
+
+\def\USO {<Uso>}
+
+\def\DISTRIBUZIONE {\GRUPPO{}\\ & \COMMITTENTE{}\\}
+
+\def\DESCRIZIONE {<Descrizione>}
+
+
+% abilita (true) / disabilita (false) indice, lista tabelle, lista figure
+\def\INDICE	{true}
+\def\TABELLE {false}
+\def\FIGURE {false}
+
+
+% importa struttura
+\input {../template/structure.tex}
+
+%importa il registro
+\input {sezioni/Registro_Glossario.tex}
+
+% importa indici
+\input {../template/index.tex}
+
+% importa parti documento
+\input {sezioni/1_Glossario.tex}
+\input {sezioni/2_Glossario.tex}
+
+%\input {sections/nomesezione}
+%\newpage
+
+% ...
+
+%\printglossaries
+
+\end{document}

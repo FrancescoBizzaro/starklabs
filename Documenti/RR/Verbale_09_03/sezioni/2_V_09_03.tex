@@ -1,0 +1,124 @@
+\section{Questioni emerse}
+Di seguito sono trascritti gli argomenti che il gruppo ha trattato durante la 
+riunione con la Proponente Mivoq. Il meeting ha avuto carattere informale. \\ A 
+seguire, vengono riportate le domande poste accompagnate da relativa 
+formalizzazione della risposta del referente dott. Giulio Paci.
+
+\subsection{Quale obiettivo si vuole raggiungere con l’applicazione?}
+Il capitolato è rimasto volutamente vago, per non imporre alcun limite sul tipo 
+di applicazione. L'unico requisito primario è l'utilizzo del motore di sintesi, 
+con lo scopo ultimo di metterne in risalto le potenzialità. Tuttavia è 
+fortemente desiderabile che l'applicazione si dimostri utile per qualche 
+utilizzo reale, in linea con gli esempi suggeriti nel capitolato.
+
+
+\subsection{Per quale motivo si è scelto il mondo mobile?}
+La scelta è stata dettata dal desiderio del committente di entrare in tale 
+settore. La scelta è stata motivata, durante l'incontro, con le seguenti 
+motivazioni:
+\begin{itemize}
+\item incentivare la diffusione dell'applicazione;
+\item praticità nell'avere l'applicativo su un dispositivo mobile, il quale 
+risulta facilmente trasportabile per eventuali dimostrazioni della tecnologia 
+FA-TTS\G.
+\end{itemize}
+
+
+\subsection{Si richiede che l'applicazione elabori una frase in tempo reale, 
+senza usare audio creato precedentemente?}
+Possono essere fatte entrambe le cose, purché l'audio venga creato attraverso 
+il motore di sintesi FA-TTS\G\ con una connessione HTTP.
+
+
+\subsection{Supposto di utilizzare il motore di sintesi in un’applicazione di messaggistica, quali sarebbero i vantaggi offerti rispetto all’invio di note vocali?}
+Una nota vocale può essere solamente ascoltata, mentre attraverso la sintesi 
+vocale un utente sarebbe libero di scegliere se leggere il messaggio o 
+ascoltarlo sintetizzato, magari con la voce digitale del mittente. Di solito si 
+preferisce leggere i messaggi, ma in alcune situazioni  questo non è possibile 
+(ad esempio se si sta guidando). A questo punto risulta utile avere la 
+possibilità di farsi leggere il messaggio da un servizio TTS\G.
+
+\subsection{Quali sono le principali problematiche riguardanti la connessione al servizio remoto?}
+Il servizio è offerto tramite un server interrogabile attraverso un'interfaccia 
+HTTP\G. Sono previste chiamate HTTP\G\ in grado di fornire l'elenco delle voci 
+disponibili, con le varie impostazioni modificabili. \\
+Le problematiche possono essere di vario genere:
+\begin{itemize}
+\item la connessione può cadere;
+\item i tempi di risposta della connessione potrebbero non essere ottimali:
+\begin{itemize}
+\item[-]i file da trasferire sono codificati in formato WAV\G\ e pertanto 
+bisogna tenere conto anche del loro peso;
+\item[-]l'elaborazione richiede tempo.
+\end{itemize}
+\end{itemize}
+Per poter arginare il problema del ritardo si potrebbero adottare strategie di 
+\textit{caching}\G , conoscendo con anticipo i possibili testi da elaborare.
+
+
+\subsection{Fino a che punto il modulo di sintesi deve integrarsi con il 
+sistema? Quali \textit{features} devono essere sempre garantite 
+dall'applicazione?}
+\'E desiderabile che venga realizzato un modulo software capace di 
+integrare il servizio remoto offerto con il sistema mobile nel quale viene 
+eseguita l'applicazione. Per risolvere la possibile assenza di connessione, che 
+renderebbe impossibile lo sfruttamento del motore di sintesi, devono essere 
+implementati meccanismi di \textit{fallback}\G\ che utilizzino le voci presenti 
+nel sistema. In questo modo sarà possibile effettuare la sintesi con le voci di 
+sistema e consentire all'applicazione di funzionare correttamente.
+
+\subsection{\'E possibile fare maggior chiarezza sulla richiesta di 
+un'implementazione separata delle varie componenti dell'applicazione?}
+L'applicazione deve essere formata da 4 parti:
+\begin{itemize}
+	\item un modulo per la sintesi, a sé stante, che corrisponde 
+	all'implementazione del motore FA-TTS\G\ di Mivoq;
+	\item un'applicazione per la configurazione, che deve essere in grado di 
+	interagire con il modulo per la sintesi al fine di modificarne determinati 
+	parametri. Ad esempio si vuole fornire la possibilità di aggiungere nuove 
+	voci, assieme a nuovi \textit{preset}\G\ di effetti associabili alle voci 
+	date;
+	\item una libreria che faciliti l'utilizzo delle funzionalità aggiuntive, 
+	permettendo il riuso della libreria stessa;
+	\item un'applicazione innovativa che dimostri in modo chiaro le 
+	potenzialità offerte dal suddetto modulo di sintesi.
+\end{itemize}
+
+
+\subsection{L'applicazione dedicata alla configurazione delle impostazioni del 
+motore si può integrare nelle impostazioni di sistema di Android?}
+\'E necessario che il gruppo approfondisca tale argomento autonomamente. 
+Probabilmente non è possibile implementare tutte le funzionalità richieste 
+direttamente nelle impostazioni del sistema operativo. Di conseguenza 
+l'applicazione di configurazione dovrà svolgere questo compito esternamente. 
+Tale applicazione dovrà consentire all'utente di aggiungere voci in maniera 
+dinamica e di salvarle con i loro parametri all'interno del sistema. \'E quindi 
+possibile sviluppare due applicazioni, oppure combinare le due funzionalità in 
+un'unica applicazione.
+
+\subsection{\'E possibile velocizzare il tempo di campionamento della voce 
+abbassando la durata del processo a un massimo di 10 minuti?}
+Attualmente il \textit{competitor}\G\ principale di Mivoq è circa 16 
+volte più lento rispetto ai 45 minuti richiesti dal motore FA-TTS\G\ per 
+registrare una nuova voce. Il motivo per cui il campionamento è così lungo 
+deriva dalla necessità di raccogliere ed elaborare un elevato numero di dati, 
+tant'è che solitamente occorrono più di 100 frasi per ottenere un buon 
+risultato. Il sistema di registrazione offerto è ancora nelle fasi preliminari 
+di sviluppo e al momento i tempi dichiarati sono i migliori disponibili.
+
+\subsection{Si riesce ad ottenere un buon risultato registrando nuove voci dal 
+microfono di uno \textit{smartphone}\G?}
+La strumentazione degli \textit{smartphone}\G\ odierni è adatta ad ottenere un 
+buon campionamento, il reale problema è dato dai tempi troppo elevati che 
+interessano il processo.
+
+\subsection{Quali strumenti di lavoro e di gestione ci verranno offerti?}
+Mivoq fornisce il motore di sintesi assieme alle voci predefinite, materiale 
+che può essere scaricato direttamente dal sito dell'azienda. Su richiesta del 
+gruppo sarà possibile avere accesso ad un sito interno di Mivoq per campionare 
+la propria voce e poterla riutilizzare anche all'interno dell'applicazione da 
+realizzare. Non viene dato alcun vincolo sugli strumenti di sviluppo per 
+implementare le applicazioni richieste. Sarà compito del team lo studio di 
+eventuali \textit{framework}\G\ per facilitare il processo di sviluppo 
+dell'applicazione finale.
+

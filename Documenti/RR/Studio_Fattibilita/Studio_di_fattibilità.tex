@@ -1,0 +1,49 @@
+% importa variabili globali
+\input {../template/config.tex}
+
+
+% definizione variabili locali
+\def\DOCUMENTO{Studio di Fattibilit\`a}
+\def\VERSIONE{v0.2.0}
+
+\def\DESCRIZIONE{<Info documento>}
+
+\def\REDATTORE {<Redattore>}
+\def\VERIFICATORE {<Verificatore>}
+\def\RESPONSABILE {<Responsabile>}
+
+\def\USO {Interno}
+
+\def\DISTRIBUZIONE {\GRUPPO{}\\ & \COMMITTENTE{}\\}
+
+\def\DESCRIZIONE {<Descrizione>}
+
+
+% abilita (true) / disabilita (false) indice, lista tabelle, lista figure
+\def\INDICE	{true}
+\def\TABELLE {false}
+\def\FIGURE {false}
+
+
+% importa struttura
+\input {../template/structure.tex}
+
+%importa il registro
+\input {sezioni/Registro_SdF.tex}
+
+% importa indici
+\input {../template/index.tex}
+
+% importa parti documento
+\input {sezioni/1_SdF.tex}
+\input {sezioni/2_SdF.tex}
+\input {sezioni/3_SdF.tex}
+
+%\input {sections/nomesezione}
+%\newpage
+
+% ...
+
+%\printglossaries
+
+\end{document}

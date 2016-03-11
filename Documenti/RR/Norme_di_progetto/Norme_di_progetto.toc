@@ -1,0 +1,49 @@
+\select@language {italian}
+\select@language {italian}
+\contentsline {section}{\numberline {1}Introduzione}{1}{section.1}
+\contentsline {subsection}{\numberline {1.1}Scopo del documento}{1}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}Scopo del progetto}{1}{subsection.1.2}
+\contentsline {subsection}{\numberline {1.3}Glossario}{1}{subsection.1.3}
+\contentsline {subsection}{\numberline {1.4}Riferimenti}{1}{subsection.1.4}
+\contentsline {subsubsection}{\numberline {1.4.1}Normativi}{1}{subsubsection.1.4.1}
+\contentsline {subsubsection}{\numberline {1.4.2}Informativi}{1}{subsubsection.1.4.2}
+\contentsline {section}{\numberline {2}Comunicazione}{2}{section.2}
+\contentsline {subsection}{\numberline {2.1}Esterna}{2}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Interna}{2}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Composizione e-mail}{2}{subsection.2.3}
+\contentsline {subsubsection}{\numberline {2.3.1}Destinatario}{2}{subsubsection.2.3.1}
+\contentsline {subsection}{\numberline {2.4}Mittente}{2}{subsection.2.4}
+\contentsline {subsubsection}{\numberline {2.4.1}Oggetto}{2}{subsubsection.2.4.1}
+\contentsline {subsection}{\numberline {2.5}Corpo}{2}{subsection.2.5}
+\contentsline {subsection}{\numberline {2.6}Allegati}{2}{subsection.2.6}
+\contentsline {section}{\numberline {3}Riunioni}{3}{section.3}
+\contentsline {subsection}{\numberline {3.1}Frequenza}{3}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Convocazione riunione}{3}{subsection.3.2}
+\contentsline {subsubsection}{\numberline {3.2.1}Interna}{3}{subsubsection.3.2.1}
+\contentsline {subsubsection}{\numberline {3.2.2}Esterna}{3}{subsubsection.3.2.2}
+\contentsline {subsection}{\numberline {3.3}Svolgimento riunione}{3}{subsection.3.3}
+\contentsline {subsubsection}{\numberline {3.3.1}Esterna}{3}{subsubsection.3.3.1}
+\contentsline {subsection}{\numberline {3.4}Verbale}{3}{subsection.3.4}
+\contentsline {subsubsection}{\numberline {3.4.1}Riunione interna}{3}{subsubsection.3.4.1}
+\contentsline {subsubsection}{\numberline {3.4.2}Riunione esterna}{4}{subsubsection.3.4.2}
+\contentsline {section}{\numberline {4}Documentazione}{4}{section.4}
+\contentsline {subsection}{\numberline {4.1}Template}{4}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Struttura del documento}{4}{subsection.4.2}
+\contentsline {subsubsection}{\numberline {4.2.1}Prima pagina}{4}{subsubsection.4.2.1}
+\contentsline {subsubsection}{\numberline {4.2.2}Registro delle modifiche}{4}{subsubsection.4.2.2}
+\contentsline {subsubsection}{\numberline {4.2.3}Indici}{4}{subsubsection.4.2.3}
+\contentsline {subsubsection}{\numberline {4.2.4}Formattazione generale delle pagine}{5}{subsubsection.4.2.4}
+\contentsline {subsection}{\numberline {4.3}Norme tipografiche}{5}{subsection.4.3}
+\contentsline {subsubsection}{\numberline {4.3.1}Stile del testo}{5}{subsubsection.4.3.1}
+\contentsline {subsubsection}{\numberline {4.3.2}Punteggiatura}{5}{subsubsection.4.3.2}
+\contentsline {subsubsection}{\numberline {4.3.3}Formati}{5}{subsubsection.4.3.3}
+\contentsline {subsubsection}{\numberline {4.3.4}Composizione del testo}{6}{subsubsection.4.3.4}
+\contentsline {subsubsection}{\numberline {4.3.5}Sigle}{6}{subsubsection.4.3.5}
+\contentsline {subsection}{\numberline {4.4}Componenti grafiche}{6}{subsection.4.4}
+\contentsline {subsubsection}{\numberline {4.4.1}Tabelle}{6}{subsubsection.4.4.1}
+\contentsline {subsubsection}{\numberline {4.4.2}Immagini}{6}{subsubsection.4.4.2}
+\contentsline {subsection}{\numberline {4.5}Classificazione dei documenti}{6}{subsection.4.5}
+\contentsline {subsubsection}{\numberline {4.5.1}Documenti formali}{6}{subsubsection.4.5.1}
+\contentsline {subsubsection}{\numberline {4.5.2}Documenti informali}{6}{subsubsection.4.5.2}
+\contentsline {subsubsection}{\numberline {4.5.3}Glossario}{7}{subsubsection.4.5.3}
+\contentsline {subsection}{\numberline {4.6}Versionamento}{7}{subsection.4.6}
